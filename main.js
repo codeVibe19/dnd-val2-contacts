@@ -19,6 +19,11 @@ const CONTACTS = {
     title: "HUMBA",
     sub:   "Kontakt · VAL-2 Canberra",
     file:  "dossier-humba.html"
+  },
+  "cipher": {
+    title: "CIPHER",
+    sub:   "Kontakt · Ghost Protocol",
+    file:  "dossier-cipher.html"
   }
 };
 
