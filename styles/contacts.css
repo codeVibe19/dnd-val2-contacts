@@ -1,0 +1,167 @@
+/* ── Dossier Popup ── */
+.val2-contact-app .window-content {
+  padding: 0;
+  overflow: hidden;
+  background: #05080a;
+  border: none;
+}
+
+.val2-contact-app .window-header {
+  background: #090d10;
+  border-bottom: 1px solid #162030;
+  color: #7a9aaa;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.val2-contact-app .window-header a.header-button {
+  color: #7a9aaa;
+}
+
+.val2-contact-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* ── GM Manager ── */
+.val2-manager-app .window-content {
+  background: #05080a;
+  color: #7a9aaa;
+  font-family: ui-monospace, monospace;
+  font-size: 12px;
+  padding: 16px;
+}
+
+.val2-manager-app h3 {
+  color: #d4820a;
+  letter-spacing: 3px;
+  font-size: 11px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  border-bottom: 1px solid #162030;
+  padding-bottom: 8px;
+}
+
+.val2-manager-row {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid #162030;
+}
+
+.val2-manager-row:last-child { border-bottom: none; }
+
+.val2-manager-player {
+  color: #b8ccd8;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.val2-manager-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.val2-contact-tag {
+  font-size: 10px;
+  letter-spacing: 1px;
+  padding: 3px 8px;
+  border: 1px solid #162030;
+  background: rgba(22,32,48,0.4);
+  color: #7a9aaa;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+  user-select: none;
+}
+
+.val2-contact-tag.assigned {
+  border-color: #d4820a;
+  color: #d4820a;
+  background: rgba(212,130,10,0.08);
+}
+
+.val2-contact-tag:hover {
+  border-color: #f0a830;
+  color: #f0a830;
+}
+
+.val2-manager-save {
+  margin-top: 16px;
+  width: 100%;
+  padding: 10px;
+  background: rgba(212,130,10,0.1);
+  border: 1px solid #d4820a;
+  color: #d4820a;
+  font-family: ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.val2-manager-save:hover {
+  background: rgba(212,130,10,0.2);
+}
+
+/* ── Player Contact List ── */
+.val2-contactlist-app .window-content {
+  background: #05080a;
+  color: #7a9aaa;
+  font-family: ui-monospace, monospace;
+  padding: 14px;
+}
+
+.val2-contactlist-app h3 {
+  color: #d4820a;
+  letter-spacing: 3px;
+  font-size: 10px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #162030;
+  padding-bottom: 8px;
+}
+
+.val2-contactlist-empty {
+  font-size: 11px;
+  color: #2a3d4a;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.val2-contact-entry {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border: 1px solid #162030;
+  margin-bottom: 6px;
+  background: rgba(22,32,48,0.3);
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.val2-contact-entry:hover {
+  border-color: #d4820a;
+  background: rgba(212,130,10,0.06);
+}
+
+.val2-contact-entry-icon {
+  color: #d4820a;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.val2-contact-entry-title {
+  font-size: 11px;
+  color: #b8ccd8;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
