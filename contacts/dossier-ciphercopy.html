@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DATENFRAGMENT // ALEISTER BLACK</title>
+<title>DATENFRAGMENT // CIPHER</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Teko:wght@300;400;600;700&display=swap');
 
@@ -12,9 +12,9 @@
     --panel:   #090d10;
     --panel2:  #0c1218;
     --border:  #162030;
-    --amber:   #d4820a;
-    --amber2:  #f0a830;
-    --amber-dim:#6a3f05;
+    --amber:   #0ac9b4;
+    --amber2:  #14f5dd;
+    --amber-dim:#055a52;
     --red:     #8b1a1a;
     --red2:    #c43030;
     --green:   #1a4a1a;
@@ -49,7 +49,7 @@
   /* scanline sweep */
   body::after {
     content:''; position:fixed; left:0; right:0; height:2px;
-    background: linear-gradient(90deg, transparent, rgba(212,130,10,0.3), transparent);
+    background: linear-gradient(90deg, transparent, rgba(10,201,180,0.4), transparent);
     animation: sweep 6s linear infinite;
     z-index:1; pointer-events:none;
   }
@@ -99,13 +99,13 @@
   }
 
   .header::after {
-    content: 'CLASSIFIED';
+    content: 'CYBERKRIEG';
     position: absolute;
     right: -28px; top: 18px;
     font-size: 48px;
     font-family: var(--display);
     font-weight: 700;
-    color: rgba(139,26,26,0.06);
+    color: rgba(10,201,180,0.06);
     letter-spacing: 4px;
     transform: rotate(15deg);
     pointer-events: none;
@@ -428,9 +428,9 @@
 
   <!-- main header -->
   <div class="header">
-    <div class="header-tag">// 03 — KONTAKTAKTE — ZUGRIFF FREIGEGEBEN</div>
-    <div class="header-name">ALEISTER <span class="acc">BLACK</span></div>
-    <div class="header-sub">EINZELPERSON · PLANETARE EBENE · MEREK / KOLONIE 44909</div>
+    <div class="header-tag">// 07 — KONTAKTAKTE — ZUGRIFF FREIGEGEBEN</div>
+    <div class="header-name">CI<span class="acc">PHER</span></div>
+    <div class="header-sub">EINZELPERSON · DIGITALE EBENE · STANDORT UNBEKANNT</div>
   </div>
 
   <!-- ID block -->
@@ -442,23 +442,23 @@
 
     <div class="id-fields">
       <div class="id-row">
-        <div class="id-key">NAME</div>
-        <div class="id-val">Aleister Black</div>
+        <div class="id-key">ALIAS</div>
+        <div class="id-val">Cipher</div>
       </div>
       <div class="id-row">
         <div class="id-key">STANDORT</div>
-        <div class="id-val">Merek · Kolonie 44909</div>
+        <div class="id-val">Variabel · Schwerpunkt: Sektor 7-Netz</div>
       </div>
       <div class="id-row">
         <div class="id-key">ZUGEHÖRIG</div>
-        <div class="id-val">Casino „3 Aces"</div>
+        <div class="id-val">Kollektiv „Ghost Protocol"</div>
       </div>
       <div class="id-row">
         <div class="id-key">STATUS</div>
         <div class="id-val">
           <div class="status-active">
             <div class="status-dot"></div>
-            AKTIV
+            AKTIV · HOCHGRADIG MOBIL
           </div>
         </div>
       </div>
@@ -469,9 +469,9 @@
             <div class="threat-pip on"></div>
             <div class="threat-pip on"></div>
             <div class="threat-pip on"></div>
+            <div class="threat-pip on"></div>
             <div class="threat-pip"></div>
-            <div class="threat-pip"></div>
-            &nbsp;&nbsp;MITTEL (PLANETAR)
+            &nbsp;&nbsp;HOCH (DIGITAL/SEKTORAL)
           </div>
         </div>
       </div>
@@ -479,12 +479,12 @@
         <div class="id-key">BEDROHUNGSLEVEL</div>
         <div class="id-val">
           <div class="threat-bar">
-            <div class="threat-pip on"></div>
-            <div class="threat-pip on"></div>
+            <div class="threat-pip on hi"></div>
+            <div class="threat-pip on hi"></div>
+            <div class="threat-pip on hi"></div>
+            <div class="threat-pip on hi"></div>
             <div class="threat-pip"></div>
-            <div class="threat-pip"></div>
-            <div class="threat-pip"></div>
-            &nbsp;&nbsp;NIEDRIG–MITTEL
+            &nbsp;&nbsp;HOCH
           </div>
         </div>
       </div>
@@ -500,8 +500,9 @@
     </div>
     <div class="sec-body">
       <div class="sec-text">
-        <p>Aleister Black ist Eigentümer des Casinos „3 Aces", dem größten Glücksspiel- und Unterhaltungszentrum auf Merek. Er gilt als etablierter Geschäftsmann mit stabilen Verbindungen in die lokale Szene.</p>
-        <p>Sein Name steht für diskrete Absprachen und zuverlässige Abwicklung.</p>
+        <p>Cipher ist eine hochqualifizierte Netrunner-Identität mit Schwerpunkt auf Datenextraktion, Systeminfiltration und digitaler Kriegsführung. Die tatsächliche Identität ist unbekannt.</p>
+        <p>Mitglied des dezentralen Kollektivs „Ghost Protocol". Tätig im gesamten Sektor 7-Netz mit gelegentlichen Aktivitäten in angrenzenden Systemen.</p>
+        <p>Bekannt für saubere Arbeit und absolute Diskretion. Keine direkten Spuren zu physischen Standorten.</p>
       </div>
     </div>
   </div>
@@ -514,14 +515,16 @@
       <span class="sec-head-chev">▲</span>
     </div>
     <div class="sec-body">
-      <ul class="data-list">
-        <li>Vermittlung von Ausrüstung und Spezialisten</li>
-        <li>Organisation diskreter Transporte</li>
-        <li>Abwicklung größerer Geldbewegungen</li>
-        <li>Beschaffung von Informationen im lokalen Umfeld</li>
-        <li>Herstellung von Kontakten zwischen Parteien mit erhöhtem Diskretionsbedarf</li>
+      <ul clInfiltration geschützter Netzwerke und Datenbanken</li>
+        <li>Exfiltration klassifizierter Informationen</li>
+        <li>Erstellung falscher digitaler Identitäten</li>
+        <li>Umgehung von Sicherheitsprotokollen (ICE-Breaking)</li>
+        <li>Verschlüsselte Kommunikationsvermittlung</li>
+        <li>Verkauf von Zero-Day-Exploits</li>
+        <li>Digitale Spurenvernichtung und Datenbereinigung</li>
       </ul>
       <div class="sec-text" style="margin-top:12px; font-size:10px; color:var(--muted);">
+        Mehrfach dokumentierte Einbrüche in Konzern-Systeme. Keine erfolgreichen Rückverfolgung
         Einfluss überwiegend planetar. Keine bekannten direkten Verbindungen zu Großkonzernen.
       </div>
     </div>
@@ -533,13 +536,15 @@
       <span class="sec-head-num">03</span>
       <span class="sec-head-title">Netzwerk</span>
       <span class="sec-head-chev">▼</span>
-    </div>
-    <div class="sec-body">
-      <ul class="data-list">
-        <li>Händler</li>
-        <li>Sicherheitskräfte</li>
-        <li>Transportkontakte</li>
-        <li>Informelle Informationsquellen im Glücksspiel- und Unterhaltungssektor</li>
+    </div>Ghost Protocol – Dezentrales Hacker-Kollektiv</li>
+        <li>Datenbroker im Untergrund-Netz</li>
+        <li>Hardwarelieferanten für spezialisierte Ausrüstung</li>
+        <li>Unbekannte Zahl von Proxy-Operatoren</li>
+        <li>Kontakte zu anderen Netrunner-Gruppen</li>
+        <li>Informanten in verschiedenen Konzernen</li>
+      </ul>
+      <div class="sec-text" style="margin-top:12px; font-size:10px; color:var(--muted);">
+        Kommunikation ausschließlich über verschlüsselte darknet-Kanäle. Persönliche Treffen extrem selten- und Unterhaltungssektor</li>
       </ul>
       <div class="sec-text" style="margin-top:12px; font-size:10px; color:var(--muted);">
         Außerhalb von Merek ist seine Reichweite begrenzt.
@@ -551,11 +556,19 @@
   <div class="section" onclick="toggle(this)">
     <div class="sec-head">
       <span class="sec-head-num">04</span>
-      <span class="sec-head-title">Bezug zu bekannten Kontakten</span>
-      <span class="sec-head-chev">▼</span>
-    </div>
-    <div class="sec-body">
-      <div class="relation">
+      <span class="sec-head-title">BezGHOST PROTOCOL — KOLLEKTIV</div>
+        <div class="relation-text">
+          Cipher ist aktives Mitglied des dezentralen Hacker-Kollektivs. Genaue Hierarchie unbekannt.<br><br>
+          Zusammenarbeit erfolgt über verschlüsselte Quantenkanäle. Aufträge werden anonym vermittelt.<br>
+          Keine physischen Zusammenkünfte dokumentiert.
+        </div>
+      </div>
+      <div class="relation" style="margin-top:6px;">
+        <div class="relation-name">// VAL-2 OPERATIVES — GELEGENTLICH</div>
+        <div class="relation-text">
+          Einzelne Einsätze mit VAL-2 Einheiten dokumentiert. Cipher stellte digitale Unterstützung bereit.<br><br>
+          Kontaktaufnahme über anonyme Drop-Protokolle. Bezahlung in Kryptowährung.<br>
+          Zusammenarbeit funktional, aber distanziert
         <div class="relation-name">// SILKOR — GESCHÄFTLICH</div>
         <div class="relation-text">
           Zwischen Black und Silkor besteht eine geschäftliche Verbindung. Black stellte Kapital und Kontakte zur Verfügung.<br><br>
@@ -569,17 +582,21 @@
           Zugriff verweigert. Klassifizierungsstufe unzureichend.
         </div>
       </div>
-    </div>
-  </div>
-
-  <!-- Section 5: Verhaltensprofil -->
-  <div class="section" onclick="toggle(this)">
-    <div class="sec-head">
-      <span class="sec-head-num">05</span>
+    </div>Paranoid</div>
+        <div class="trait">Methodisch</div>
+        <div class="trait">Technisch Versiert</div>
+        <div class="trait">Anonym</div>
+        <div class="trait">Präzise</div>
+        <div class="trait">Unberechenbar</div>
+      </div>
+      <div class="sec-text" style="margin-top:14px;">
+        <p>Kommunikation ausschließlich digital und verschlüsselt. Persönliche Informationen werden strikt vermieden. Verhaltensanalyse deutet auf hohe technische Kompetenz und professionelle Ausbildung hin.</p>
+        <p>Arbeitsweise ist äußerst methodisch. Jeder Auftrag wird sorgfältig geplant und ausgeführt. Keine dokumentierten Fehler oder Kompromittierungen.</p>
+        <p>Zeigt keinerlei Loyalität zu Auftraggebern über die Bezahlung hinaus. Ethische Grenzen scheinen flexibel zu sein
       <span class="sec-head-title">Verhaltensprofil</span>
       <span class="sec-head-chev">▼</span>
-    </div>
-    <div class="sec-body">
+    </div>112</div>
+    <div class="footer-right">⚠ HOCHGRADIG KLASSIFIZIERT
       <div class="trait-grid">
         <div class="trait">Ruhig</div>
         <div class="trait">Kontrolliert</div>
